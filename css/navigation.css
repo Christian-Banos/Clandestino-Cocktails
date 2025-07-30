@@ -1,0 +1,43 @@
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-bg);
+    border-bottom: 1px solid var(--secondary-bg);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 150px; /* Tamaño convencional para logos */
+        height: auto; /* Mantiene la proporción */
+        object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
+        transform: scale(1.5); /* aumenta el tamaño de la imagen en un 20% */
+        transform-origin: center; /* el escalado se hace desde el centro */
+    }
+}
+
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 23px;
+}
+
+.nav-menu li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-family: var(--body);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.nav-menu li a:hover {
+    color: var(--gold-accent);
+}

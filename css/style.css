@@ -1,0 +1,32 @@
+/* imports */
+@import url('./navigation.css');
+@import url('./responsive.css');
+@import url('./hero.css');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables from Figma design */
+:root {
+    --primary-bg: #051118;
+    --secondary-bg: #061A25;
+    --gold-accent: #955C19;
+    --text-light: #ffffff;
+    --text-muted: #cccccc;
+
+    /* tipografia */
+    --title: "ADLaM Display", sans-serif;
+    --body: adamina, sans-serif;
+
+}
+
+body {
+    font-family: var(--body);
+    background-color: var(--primary-bg);
+    color: var(--text-light);
+    line-height: 1.6;
+}

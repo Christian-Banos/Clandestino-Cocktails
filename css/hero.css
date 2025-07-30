@@ -1,0 +1,65 @@
+/* Hero Section - Background Image with Text Overlay */
+.hero {
+    min-height: 100vh;
+    background-image: url('../images/backgrounds/ChatGPT\ Image\ Jul\ 29\,\ 2025\,\ 10_16_44\ PM.png');
+    background-size: 100% 70%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Dark overlay for better text readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(6, 26, 37, 0.3);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30rem auto;
+    z-index: 2;
+    min-width: 70rem;
+    color: var(--text-light);
+}
+
+.hero-title {
+    font-family: 'inter';
+    font-size: 10rem;
+    color: var(--gold-accent);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    opacity: 0.8;
+}
+
+.hero-subtitle {
+    font-family: var(--body);
+    font-size: 3rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+hr{
+    width: 100%;
+    border: 1px solid var(--gold-accent);
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+}
